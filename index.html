@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kawaii Egg Timer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'gaegu': ['Gaegu', 'cursive'],
+            },
+            keyframes: {
+              'gentle-bounce': {
+                '0%, 100%': { transform: 'translateY(-2%)', animationTimingFunction: 'cubic-bezier(0.8, 0, 1, 1)' },
+                '50%': { transform: 'translateY(0)', animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)' },
+              },
+              'gentle-rock': {
+                '0%, 100%': { transform: 'rotate(-2deg)' },
+                '50%': { transform: 'rotate(2deg)' },
+              },
+              'pop-in': {
+                '0%': { opacity: '0', transform: 'scale(0.5)' },
+                '100%': { opacity: '1', transform: 'scale(1)' },
+              },
+              'butter-melt': {
+                '0%, 100%': { transform: 'translateY(0) scale(1)', opacity: 1 },
+                '50%': { transform: 'translateY(8px) scale(0.95)', opacity: 0.8 },
+              }
+            },
+            animation: {
+              'gentle-bounce': 'gentle-bounce 2s infinite',
+              'gentle-rock': 'gentle-rock 3s infinite ease-in-out',
+              'pop-in': 'pop-in 0.5s ease-out forwards',
+              'butter-melt': 'butter-melt 4s infinite ease-in-out',
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Gaegu', cursive;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
