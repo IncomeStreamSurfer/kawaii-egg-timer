@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+    <title>Kawaii Egg Timer</title>
+
+    <!-- PWA Meta Tags -->
+    <meta name="description" content="A kawaii egg timer for perfect soft, medium, or hard boiled eggs every time!" />
+    <meta name="theme-color" content="#f59e0b" />
+    <link rel="manifest" href="/kawaii-egg-timer/manifest.json" />
+
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" sizes="152x152" href="/kawaii-egg-timer/icons/icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="/kawaii-egg-timer/icons/icon-192x192.png" />
+    <link rel="apple-touch-icon" sizes="512x512" href="/kawaii-egg-timer/icons/icon-512x512.png" />
+
+    <!-- Apple Web App Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Egg Timer" />
+
+    <!-- Microsoft Tiles -->
+    <meta name="msapplication-TileColor" content="#f59e0b" />
+    <meta name="msapplication-TileImage" content="/kawaii-egg-timer/icons/icon-144x144.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/kawaii-egg-timer/icons/icon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/kawaii-egg-timer/icons/icon-16x16.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'gaegu': ['Gaegu', 'cursive'],
+            },
+            keyframes: {
+              'gentle-bounce': {
+                '0%, 100%': { transform: 'translateY(-2%)', animationTimingFunction: 'cubic-bezier(0.8, 0, 1, 1)' },
+                '50%': { transform: 'translateY(0)', animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)' },
+              },
+              'gentle-rock': {
+                '0%, 100%': { transform: 'rotate(-2deg)' },
+                '50%': { transform: 'rotate(2deg)' },
+              },
+              'pop-in': {
+                '0%': { opacity: '0', transform: 'scale(0.5)' },
+                '100%': { opacity: '1', transform: 'scale(1)' },
+              },
+              'butter-melt': {
+                '0%, 100%': { transform: 'translateY(0) scale(1)', opacity: 1 },
+                '50%': { transform: 'translateY(8px) scale(0.95)', opacity: 0.8 },
+              }
+            },
+            animation: {
+              'gentle-bounce': 'gentle-bounce 2s infinite',
+              'gentle-rock': 'gentle-rock 3s infinite ease-in-out',
+              'pop-in': 'pop-in 0.5s ease-out forwards',
+              'butter-melt': 'butter-melt 4s infinite ease-in-out',
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Gaegu', cursive;
+      }
+    </style>
+
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/kawaii-egg-timer/assets/index-COLvaYNg.js"></script>
+  <link rel="stylesheet" crossorigin href="/kawaii-egg-timer/assets/index-BruU1LKI.css">
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

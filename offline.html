@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline - Kawaii Egg Timer</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Gaegu', cursive, Arial, sans-serif;
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .container {
+            padding: 2rem;
+            max-width: 400px;
+        }
+        h1 {
+            font-size: 3rem;
+            color: #92400e;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 1.5rem;
+            color: #b45309;
+            margin-bottom: 2rem;
+        }
+        .egg {
+            font-size: 6rem;
+            margin-bottom: 1rem;
+            animation: bounce 2s infinite;
+        }
+        button {
+            background: #f59e0b;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.25rem;
+            border-radius: 2rem;
+            cursor: pointer;
+            font-family: inherit;
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background: #d97706;
+            transform: scale(1.05);
+        }
+        button:active {
+            transform: scale(0.98);
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="egg">🥚</div>
+        <h1>You're Offline!</h1>
+        <p>Don't worry, your egg timer works offline too! Just make sure you've visited the page at least once while connected.</p>
+        <button onclick="window.location.reload()">Try Again</button>
+    </div>
+</body>
+</html>

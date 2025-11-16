@@ -1,0 +1,31 @@
+<svg width="512" height="512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="512" height="512" fill="#f59e0b" rx="80"/>
+
+  <!-- Egg shape -->
+  <ellipse cx="256" cy="280" rx="140" ry="180" fill="#fef3c7"/>
+
+  <!-- Egg white highlight -->
+  <ellipse cx="200" cy="220" rx="40" ry="50" fill="#fffbeb" opacity="0.7"/>
+
+  <!-- Cute face - eyes -->
+  <circle cx="220" cy="260" r="12" fill="#92400e"/>
+  <circle cx="292" cy="260" r="12" fill="#92400e"/>
+
+  <!-- Cute face - blush -->
+  <ellipse cx="170" cy="290" rx="20" ry="15" fill="#fca5a5" opacity="0.5"/>
+  <ellipse cx="342" cy="290" rx="20" ry="15" fill="#fca5a5" opacity="0.5"/>
+
+  <!-- Cute face - smile -->
+  <path d="M 220 300 Q 256 320 292 300" stroke="#92400e" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+  <!-- Timer clock face -->
+  <circle cx="380" cy="150" r="60" fill="#fff" stroke="#92400e" stroke-width="4"/>
+
+  <!-- Clock hands -->
+  <line x1="380" y1="150" x2="380" y2="120" stroke="#92400e" stroke-width="6" stroke-linecap="round"/>
+  <line x1="380" y1="150" x2="405" y2="165" stroke="#92400e" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Clock center dot -->
+  <circle cx="380" cy="150" r="6" fill="#92400e"/>
+</svg>
